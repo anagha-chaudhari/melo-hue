@@ -1,11 +1,1 @@
-Hey :)
-Welcome to MeloHue 🧸 just a quiet little space I made on the internet.
-
-When I was younger, I’d often find comfort in study vlogs, especially one particular channel that has this real, mindful vibe. The kind of atmosphere that makes everything feel a little lighter, a little slower, a little hustle and little productive too in the best way.
-
-I wanted a place where I could hold on to that feeling without all the usual distractions. Somewhere to watch their videos, listen to the music they used, and just… focus. Or relax. Or maybe both.
-
-I don't consider this as big project — but just something made with care, for anyone who enjoys the same kind of quiet comfort.
-
-Feel free to stay as long as you like.
-I hope it brings you a little peace — or maybe even add a little meaning to your day. 🌿
+𝐇𝐞𝐲 :) 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐌𝐞𝐥𝐨𝐇𝐮𝐞 🧸 𝐣𝐮𝐬𝐭 𝐚 𝐪𝐮𝐢𝐞𝐭 𝐥𝐢𝐭𝐭𝐥𝐞 𝐬𝐩𝐚𝐜𝐞 𝐈 𝐦𝐚𝐝𝐞 𝐨𝐧 𝐭𝐡𝐞 𝐢𝐧𝐭𝐞𝐫𝐧𝐞𝐭.  𝐖𝐡𝐞𝐧 𝐈 𝐰𝐚𝐬 𝐲𝐨𝐮𝐧𝐠𝐞𝐫, 𝐈’𝐝 𝐨𝐟𝐭𝐞𝐧 𝐟𝐢𝐧𝐝 𝐜𝐨𝐦𝐟𝐨𝐫𝐭 𝐢𝐧 𝐬𝐭𝐮𝐝𝐲 𝐯𝐥𝐨𝐠𝐬, 𝐞𝐬𝐩𝐞𝐜𝐢𝐚𝐥𝐥𝐲 𝐨𝐧𝐞 𝐩𝐚𝐫𝐭𝐢𝐜𝐮𝐥𝐚𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐭𝐡𝐚𝐭 𝐡𝐚𝐬 𝐭𝐡𝐢𝐬 𝐫𝐞𝐚𝐥, 𝐦𝐢𝐧𝐝𝐟𝐮𝐥 𝐯𝐢𝐛𝐞. 𝐓𝐡𝐞 𝐤𝐢𝐧𝐝 𝐨𝐟 𝐚𝐭𝐦𝐨𝐬𝐩𝐡𝐞𝐫𝐞 𝐭𝐡𝐚𝐭 𝐦𝐚𝐤𝐞𝐬 𝐞𝐯𝐞𝐫𝐲𝐭𝐡𝐢𝐧𝐠 𝐟𝐞𝐞𝐥 𝐚 𝐥𝐢𝐭𝐭𝐥𝐞 𝐥𝐢𝐠𝐡𝐭𝐞𝐫, 𝐚 𝐥𝐢𝐭𝐭𝐥𝐞 𝐬𝐥𝐨𝐰𝐞𝐫, 𝐚 𝐥𝐢𝐭𝐭𝐥𝐞 𝐡𝐮𝐬𝐭𝐥𝐞 𝐚𝐧𝐝 𝐥𝐢𝐭𝐭𝐥𝐞 𝐩𝐫𝐨𝐝𝐮𝐜𝐭𝐢𝐯𝐞 𝐭𝐨𝐨 𝐢𝐧 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐰𝐚𝐲.  𝐈 𝐰𝐚𝐧𝐭𝐞𝐝 𝐚 𝐩𝐥𝐚𝐜𝐞 𝐰𝐡𝐞𝐫𝐞 𝐈 𝐜𝐨𝐮𝐥𝐝 𝐡𝐨𝐥𝐝 𝐨𝐧 𝐭𝐨 𝐭𝐡𝐚𝐭 𝐟𝐞𝐞𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐚𝐥𝐥 𝐭𝐡𝐞 𝐮𝐬𝐮𝐚𝐥 𝐝𝐢𝐬𝐭𝐫𝐚𝐜𝐭𝐢𝐨𝐧𝐬. 𝐒𝐨𝐦𝐞𝐰𝐡𝐞𝐫𝐞 𝐭𝐨 𝐰𝐚𝐭𝐜𝐡 𝐭𝐡𝐞𝐢𝐫 𝐯𝐢𝐝𝐞𝐨𝐬, 𝐥𝐢𝐬𝐭𝐞𝐧 𝐭𝐨 𝐭𝐡𝐞 𝐦𝐮𝐬𝐢𝐜 𝐭𝐡𝐞𝐲 𝐮𝐬𝐞𝐝, 𝐚𝐧𝐝 𝐣𝐮𝐬𝐭… 𝐟𝐨𝐜𝐮𝐬. 𝐎𝐫 𝐫𝐞𝐥𝐚𝐱. 𝐎𝐫 𝐦𝐚𝐲𝐛𝐞 𝐛𝐨𝐭𝐡.  𝐈 𝐝𝐨𝐧'𝐭 𝐜𝐨𝐧𝐬𝐢𝐝𝐞𝐫 𝐭𝐡𝐢𝐬 𝐚𝐬 𝐛𝐢𝐠 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 — 𝐛𝐮𝐭 𝐣𝐮𝐬𝐭 𝐬𝐨𝐦𝐞𝐭𝐡𝐢𝐧𝐠 𝐦𝐚𝐝𝐞 𝐰𝐢𝐭𝐡 𝐜𝐚𝐫𝐞, 𝐟𝐨𝐫 𝐚𝐧𝐲𝐨𝐧𝐞 𝐰𝐡𝐨 𝐞𝐧𝐣𝐨𝐲𝐬 𝐭𝐡𝐞 𝐬𝐚𝐦𝐞 𝐤𝐢𝐧𝐝 𝐨𝐟 𝐪𝐮𝐢𝐞𝐭 𝐜𝐨𝐦𝐟𝐨𝐫𝐭.  𝐅𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐬𝐭𝐚𝐲 𝐚𝐬 𝐥𝐨𝐧𝐠 𝐚𝐬 𝐲𝐨𝐮 𝐥𝐢𝐤𝐞. 𝐈 𝐡𝐨𝐩𝐞 𝐢𝐭 𝐛𝐫𝐢𝐧𝐠𝐬 𝐲𝐨𝐮 𝐚 𝐥𝐢𝐭𝐭𝐥𝐞 𝐩𝐞𝐚𝐜𝐞 — 𝐨𝐫 𝐦𝐚𝐲𝐛𝐞 𝐞𝐯𝐞𝐧 𝐚𝐝𝐝 𝐚 𝐥𝐢𝐭𝐭𝐥𝐞 𝐦𝐞𝐚𝐧𝐢𝐧𝐠 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐝𝐚𝐲. 🌿
