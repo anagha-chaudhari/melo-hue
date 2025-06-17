@@ -8,4 +8,5 @@ I wanted a place where I could hold on to that feeling without all the usual dis
 This isn’t a big project or anything — just something made with care, for anyone who enjoys the same kind of quiet comfort.
 
 Feel free to stay as long as you like.
-I hope it brings you a little peace — or maybe even a little meaning to your day. 🌿
+I hope it brings you a little peace,
+or maybe even a little meaning to your day. 🌿
