@@ -1,0 +1,290 @@
+/* 💾 Windows 95 Theme for MeloHue */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', monospace;
+  background-color: #C0C0C0;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+main {
+  flex:1;
+}
+
+/* === Navigation Bar === */
+.navbar {
+  background-color: #000080;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1.2rem;
+  font-size: 11px;
+}
+
+.logo {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.nav-links a {
+  background: #C0C0C0;
+  color: #000;
+  padding: 4px 10px;
+  text-decoration: none;
+  border: 2px solid #000;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  font-size: 11px;
+}
+
+.nav-links a:hover {
+  background-color: #A0A0A0;
+}
+
+/* === Hero Section === */
+.hero {
+  background-color: #E0E0E0;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h2 {
+  font-size: 16px;
+  color: #000080;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 12px;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  font-size: 11px;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  background: #C0C0C0;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  cursor: pointer;
+}
+
+.hero .btn:hover {
+  background-color: #A0A0A0;
+}
+
+.hero-img {
+  max-width: 20%;
+  min-width: 20%;
+  height: auto;
+  border: 2px solid #000;
+  padding: 6px;
+  background-color: #E0E0E0;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #ffffff, 2px 2px #333;
+  border-radius: 2px;
+}
+
+/* === Footer === */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C0C0C0;
+  border-top: 3px solid #000;
+  padding: 0.8rem;
+  font-size: 11px;
+  text-align: center;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+}
+
+/* 📼 Vlog Cards */
+.vlog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.vlog-card {
+  width: 300px;
+  background: #f5f5f5;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.vlog-card iframe {
+  width: 100%;
+  height: 170px;
+  margin-bottom: 0.5rem;
+}
+
+
+.vlog-card h3 {
+  color: #000080;
+  margin-bottom: 0.5rem;
+}
+
+/* 🎵 Music Cards */
+.music-header {
+      background-color: #E0E0E0;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .music-header h2 {
+      font-size: 18px;
+      color: #000080;
+      margin-bottom: 0.5rem;
+    }
+
+    .music-header p {
+      font-size: 13px;
+      color: #444;
+    }
+
+    .music-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .music-card {
+      background-color: #F7F7F7;
+      border: 2px solid #000;
+      box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .track-title {
+      margin-top: 0.8rem;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .tags {
+      margin-top: 0.5rem;
+    }
+
+    .tags span {
+      display: inline-block;
+      background-color: #C0C0C0;
+      border: 1px solid #000;
+      padding: 2px 8px;
+      font-size: 10px;
+      margin: 0 4px;
+      border-radius: 4px;
+    }
+
+    .search-bar {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .search-bar input {
+      padding: 0.4rem 1rem;
+      font-size: 13px;
+      border: 2px solid #000;
+      box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+      border-radius: 6px;
+      width: 60%;
+      max-width: 300px;
+    }
+
+    .search-bar button {
+      padding: 0.4rem 1rem;
+      font-size: 13px;
+      border: 2px solid #000;
+      background-color: #C0C0C0;
+      margin-left: 8px;
+      cursor: pointer;
+      box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+      border-radius: 6px;
+    }
+
+/* 🔐 Login / Signup */
+.login-container {
+  background-color: #DCDCDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  min-height: 80vh;
+}
+
+.login-card {
+  background: #FFFFFF;
+  padding: 2rem;
+  border: 2px solid #000;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h2 {
+  color: #000080;
+  margin-bottom: 1rem;
+  font-size: 13px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 12px;
+  margin-bottom: 1rem;
+  border: 2px solid #000;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  background-color: #F8F8F8;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 12px;
+  border: 2px solid #000;
+  background-color: #C0C0C0;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background-color: #A0A0A0;
+}
+
+.signup-msg {
+  margin-top: 1rem;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* 🧷 Footer 
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #BEBEBE;
+  border-top: 2px solid #000;
+  font-size: 10px;
+}*/
