@@ -4,6 +4,7 @@ const fetch = require('node-fetch');
 const cors = require('cors');
 const { getChannelIdFromHandle, getVideosByChannelId } = require('./yt');
 const { searchTrack } = require('./spotify');
+const focusRoutes = require('./yt_focus'); 
 
 const app = express();
 app.use(cors());
@@ -68,6 +69,7 @@ app.get('/api/music/:query', async (req, res) => {
   }
 });
 
+app.use('/api/focus', focusRoutes);
 
 app.listen(PORT, () => {
   console.log(`Backend running at http://localhost:${PORT}`);

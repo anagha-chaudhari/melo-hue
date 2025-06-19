@@ -2,7 +2,7 @@ require('dotenv').config();
 const fetch = require('node-fetch');
 
 const getChannelIdFromHandle = async (handle) => {
-  const query = handle.replace('@', ''); // Remove @
+  const query = handle.replace('@', ''); 
   const apiKey = process.env.yt_api_key;
 
   const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=channel&q=${query}&key=${apiKey}`;
@@ -19,7 +19,7 @@ const getChannelIdFromHandle = async (handle) => {
 const getVideosByChannelId = async (channelId) => {
   const apiKey = process.env.yt_api_key;
 
-  const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=10`;
+  const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=5`;
 
   const response = await fetch(url);
   const data = await response.json();

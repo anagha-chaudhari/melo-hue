@@ -1,7 +1,7 @@
 // client/js/vlogs.js
 
 const vlogContainer = document.getElementById('vlogContainer');
-const handle = '@sweetmed_dia'; // or change to whichever creator you like
+const handle = '@yoorajung'; 
 
 async function fetchVideos() {
   try {

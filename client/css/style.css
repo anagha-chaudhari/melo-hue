@@ -1,4 +1,3 @@
-/* 💾 Windows 95 Theme for MeloHue */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
@@ -15,7 +14,7 @@ main {
   flex:1;
 }
 
-/* === Navigation Bar === */
+
 .navbar {
   background-color: #000080;
   color: #fff;
@@ -34,7 +33,7 @@ main {
 
 .nav-links {
   display: flex;
-  gap: 0.7rem;
+  gap: 0.9rem;
 }
 
 .nav-links a {
@@ -44,15 +43,14 @@ main {
   text-decoration: none;
   border: 2px solid #000;
   box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .nav-links a:hover {
   background-color: #A0A0A0;
 }
 
-/* === Hero Section === */
-.hero {
+/*.hero {
   background-color: #E0E0E0;
   padding: 3rem 2rem;
   display: flex;
@@ -100,9 +98,86 @@ main {
   background-color: #E0E0E0;
   box-shadow: inset -2px -2px #808080, inset 2px 2px #ffffff, 2px 2px #333;
   border-radius: 2px;
+}*/
+
+/* .. Homepage .. */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #dfdfdf, #fdfdfd); 
+  border: 2px solid #000;
+  padding: 2.5rem 2rem;
+  margin: 2rem;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  font-family: 'Press Start 2P', monospace;
+  border-radius: 6px;
+  gap: 2rem;
 }
 
-/* === Footer === */
+.hero-content {
+  flex: 1;
+  min-width: 250px;
+  padding: 0;
+}
+
+.hero-content h2 {
+  font-size: 1.4rem;
+  color: #000080;
+  margin-bottom: 1rem;
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-shadow: 1px 1px #ffffff;
+  line-height: 1.6;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  background: none;
+  border: none;
+  font-family: 'VT323', monospace;
+  box-shadow: none;
+  text-shadow: 0.5px 0.5px #ffffff;
+  line-height: 1.6;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: linear-gradient(to bottom, #ad7b6d, #9d7752); 
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.8rem;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+  text-decoration: none;
+  font-family: 'Press Start 2P', monospace;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+}
+
+.hero .btn:hover {
+  background: linear-gradient(to bottom, #91d88f, #91e9a4);
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 0 #000;
+}
+
+.hero-img {
+  flex: 1;
+  max-width: 350px;
+  width: 100%;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  image-rendering: pixelated;
+  border-radius: 4px;
+}
+
+/* .. footer for all pages .. */
+
 footer {
   position: fixed;
   left: 0;
@@ -116,7 +191,8 @@ footer {
   box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
 }
 
-/* 📼 Vlog Cards */
+/* .. vlogs page .. */
+
 .vlog-grid {
   display: flex;
   flex-wrap: wrap;
@@ -145,7 +221,9 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* 🎵 Music Cards */
+
+/* .. music page .. */
+
 .music-header {
       background-color: #E0E0E0;
       padding: 2rem;
@@ -225,66 +303,328 @@ footer {
       border-radius: 6px;
     }
 
-/* 🔐 Login / Signup */
+    /* .. login page .. */
+
 .login-container {
-  background-color: #DCDCDC;
+  background: linear-gradient(135deg, #dcdcdc, #f0f0f0); /* XP gray gradient */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4rem 1rem;
-  min-height: 80vh;
+  min-height: 100vh;
+  font-family: 'Press Start 2P', monospace;
 }
 
 .login-card {
-  background: #FFFFFF;
-  padding: 2rem;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
   border: 2px solid #000;
-  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #ffffff;
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
+  border-radius: 6px;
 }
 
 .login-card h2 {
   color: #000080;
-  margin-bottom: 1rem;
-  font-size: 13px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px #fff;
 }
 
 .login-card input {
   width: 100%;
-  padding: 0.5rem;
-  font-size: 12px;
-  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
   border: 2px solid #000;
   box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
-  background-color: #F8F8F8;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  color: #000;
+  font-family: 'VT323', monospace;
+  border-radius: 4px;
 }
 
 .login-card button {
   width: 100%;
-  padding: 0.6rem;
-  font-size: 12px;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
   border: 2px solid #000;
-  background-color: #C0C0C0;
+  background: linear-gradient(to bottom, #d8d8d8, #d6d6d6);
   box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
   cursor: pointer;
+  color: #000;
+  font-family: 'Press Start 2P', monospace;
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
 .login-card button:hover {
-  background-color: #A0A0A0;
+  background: #ea7547;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 0 #000;
 }
 
 .signup-msg {
-  margin-top: 1rem;
-  font-size: 10px;
+  margin-top: 1.2rem;
+  font-size: 0.65rem;
+  text-align: center;
+  color: #000;
+}
+
+
+/* .. playlist page .. */
+
+
+.playlist-header {
+  background-color: #d4d0c8; 
+  border: 2px solid #000;
+  border-top: 2px solid #fff; 
+  box-shadow: inset -2px -2px #666, inset 2px 2px #fff; 
+  padding: 6px 10px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  /*color: #121f83;*/
+  color: #c6086ed2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 0.2;
+  border-radius: 2px;
+}
+
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.playlist-card {
+  background-color: #f5f5f5;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 2px 2px 0 #000;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  color: #000;
   text-align: center;
 }
 
-/* 🧷 Footer 
-footer {
+.playlist-card iframe {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.playlist-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.tags {
+  margin-top: 0.6rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #e0e0e0;
+  border: 1px solid #000;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+/* .. focus page .. */
+
+.video-wrapper {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      filter: grayscale(100%) brightness(0.6);
+      pointer-events: none;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    .focus-window {
+  position: absolute;
+  width: 280px;
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 0px #999;
+  z-index: 10;
+  cursor: move;
+}
+
+.focus-window-header {
+  background-color: #dcdcdc;
+  padding: 0.3rem 0.5rem;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.focus-window-header span {
+  font-weight: normal;
+  cursor: default;
+}
+
+.focus-window-content {
   padding: 1rem;
   text-align: center;
-  background-color: #BEBEBE;
-  border-top: 2px solid #000;
+}
+
+.focus-timer {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0px #999;
+}
+
+.focus-btns {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.focus-btns button {
   font-size: 10px;
-}*/
+  padding: 8px 8px;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #000;
+  font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.focus-btns .start {
+  background-color: #008980;
+  
+  color: rgb(235, 255, 252);
+}
+
+.focus-btns .pause {
+  background-color: #ab1e48;
+  color: rgb(255, 235, 239);
+}
+
+.focus-btns .reset {
+  background-color: #f5be34;
+}
+
+.focus-btns button:hover {
+  transform: translateY(-2px);
+}
+
+.focus-btns button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* .. about page .. */
+
+.about-xp {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+  background: #e6e6e6;
+  font-family: 'VT323', monospace;
+}
+
+.about-box {
+  width: 40%;
+  padding: 1rem 1.5rem;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 0 #0e0e5c;
+  min-height: 300px;
+}
+
+.green-box {
+  background: linear-gradient(45deg, #addfb0, #77bdb8);
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cream-box {
+  /*background: #f0e5cb;*/
+  background: linear-gradient(45deg, #f5e6c3, #f48d6e);
+  color: #222;
+  font-family: 'VT323', monospace;
+  font-size: 1rem;
+}
+
+.about-box h2 {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 1.2rem;
+  color: #0e0e5c;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about-box p {
+  font-family:'Press Start 2P', sans-serif;
+  font-size: 0.9rem;
+  color: #fffaf0;
+}
+
+.cream-box textarea {
+  width: 100%;
+  height: 150px;
+  background: #fef8e9;
+  border: 1px solid #999;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  resize: none;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: inset 2px 2px 2px #ccc;
+}
+
+.button-row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.xp-btn {
+  font-size: 11px;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000;
+  font-family: 'Press Start 2P', sans-serif;
+  background: #C0C0C0;
+  box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #555;
+  transition: 0.2s;
+}
+
+.xp-btn:hover {
+  background: #ccc;
+}

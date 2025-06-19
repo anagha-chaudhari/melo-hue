@@ -1,5 +1,5 @@
 async function loadMusic() {
-    const res = await fetch('http://localhost:5000/api/music/study+vibes');
+   const res = await fetch('http://localhost:5000/api/music/study');
     const data = await res.json();
 
     const grid = document.querySelector('.music-grid');
