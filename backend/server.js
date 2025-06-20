@@ -1,10 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const fetch = require('node-fetch');
+const mongoose = require('mongoose');
 const cors = require('cors');
 const { getChannelIdFromHandle, getVideosByChannelId } = require('./yt');
 const { searchTrack } = require('./spotify');
 const focusRoutes = require('./yt_focus'); 
+const authRoutes = require('./routes/auth_route');
 
 const app = express();
 app.use(cors());
@@ -70,6 +72,20 @@ app.get('/api/music/:query', async (req, res) => {
 });
 
 app.use('/api/focus', focusRoutes);
+
+app.use('/api/auth', authRoutes);
+
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  console.log('MongoDB connected');
+  app.listen(process.env.PORT, () =>
+    console.log(`Server running on port ${PORT}`)
+  );
+}).catch((err) => {
+  console.error('DB connection failed:', err);
+});
 
 app.listen(PORT, () => {
   console.log(`Backend running at http://localhost:${PORT}`);

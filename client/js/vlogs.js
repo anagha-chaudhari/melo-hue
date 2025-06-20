@@ -1,5 +1,3 @@
-// client/js/vlogs.js
-
 const vlogContainer = document.getElementById('vlogContainer');
 const handle = '@yoorajung'; 
 
