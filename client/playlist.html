@@ -20,9 +20,27 @@
     </ul>
   </nav>
 
-  <header class="playlist-header">
-    <h2>𖤐 little notebook of the things you love 𖤐</h2>
-  </header>
+  <div class="playlist-bar">
+  <h2 class="playlist-header">𖤐 little notebook of the music you love 𖤐</h2>
+  <button class="add-btn" onclick="openPopup()">Add</button>
+</div>
+
+
+  <div class="popup-overlay" id="popupOverlay">
+  <div class="popup-window">
+    <h3>✨ Add New Track</h3>
+    <form id="addTrackForm">
+      <input type="text" id="title" placeholder="Track Title" required />
+      <input type="text" id="spotifyTrackId" placeholder="Spotify Track ID" required />
+      <input type="text" id="tags" placeholder="Tags (comma separated)" required />
+      <div class="popup-buttons">
+        <button type="submit">Add</button>
+        <button type="button" onclick="closePopup()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 
   <section class="playlist-grid" id="playlistGrid">
     <!-- Tracks will be injected here -->

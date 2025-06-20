@@ -1,5 +1,5 @@
 let timer;
-let totalSeconds = 1500; 
+let totalSeconds = 3600; 
 let isRunning = false;
 
 function updateDisplay() {

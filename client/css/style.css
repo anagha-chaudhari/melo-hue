@@ -44,10 +44,11 @@ main {
   border: 2px solid #000;
   box-shadow: inset -2px -2px #808080, inset 2px 2px #fff;
   font-size: 12px;
+  transition: all 0.2s ease;
 }
 
 .nav-links a:hover {
-  background-color: #A0A0A0;
+  background-color: #ececec; 
 }
 
 /*.hero {
@@ -161,7 +162,7 @@ main {
 }
 
 .hero .btn:hover {
-  background: linear-gradient(to bottom, #91d88f, #91e9a4);
+  background: linear-gradient(to bottom, #ffb186, #f4b65f);
   transform: translateY(-2px);
   box-shadow: 3px 3px 0 #000;
 }
@@ -380,22 +381,50 @@ footer {
 /* .. playlist page .. */
 
 
-.playlist-header {
-  background-color: #d4d0c8; 
-  border: 2px solid #000;
-  border-top: 2px solid #fff; 
-  box-shadow: inset -2px -2px #666, inset 2px 2px #fff; 
-  padding: 6px 10px;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 0.7rem;
-  /*color: #121f83;*/
-  color: #c6086ed2;
-  text-align: center;
+.playlist-bar {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-  line-height: 0.2;
+  justify-content: center; 
+  align-items: center;      
+  gap: 1rem; 
+  background-color: #ffeeecee; 
+  border: 2px solid #000;
+  border-top: 2px solid #fff;
+  box-shadow: inset -2px -2px #666, inset 2px 2px #fff;
+  padding: 10px 20px;
   border-radius: 2px;
+  width: 100%;
+}
+
+.playlist-header {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.8rem;
+  color: #c6086ed2;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.add-btn {
+  background-color: #e91a88d2; 
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.65rem;
+  font-family: 'Press Start 2P', monospace;
+  border: 2px solid #000;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  box-shadow: 2px 2px 0 #444;
+}
+
+.add-btn:hover {
+  background-color: #ff5087ec;
+  box-shadow: 2px 2px 0 #222;
+  transform: translateY(-1px);
+}
+
+.add-btn:active {
+  transform: translateY(2px);
 }
 
 
@@ -445,6 +474,80 @@ footer {
   font-size: 0.8rem;
 }
 
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  font-family: 'Press Start 2P', 'VT323', monospace;
+}
+
+.popup-window {
+  background: #f4f4f4; 
+  border: 2px solid #000;
+  padding: 1.8rem 1.5rem;
+  width: 350px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 #000;
+  text-align: center;
+}
+
+.popup-window h3 {
+  font-size: 1rem;
+  color: #121f83;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.popup-window form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.popup-window input {
+  padding: 10px;
+  font-family: 'VT323', monospace;
+  border: 2px solid #666;
+  background-color: #fff;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 0 #ccc;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.popup-buttons button {
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-family: 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  background: #d6d3ce;
+  color: #000;
+  border: 2px solid #444;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #888;
+  border-radius: 2px;
+}
+
+.popup-buttons button:hover {
+  background-color: #ff9c85;
+  transform: translateY(-2px);
+}
+
+.popup-buttons button:active{
+  transform: translateY(2px);
+}
+
+
 /* .. focus page .. */
 
 .video-wrapper {
@@ -463,13 +566,13 @@ footer {
     }
 
     .focus-window {
-  position: absolute;
-  width: 280px;
-  background-color: #f0f0f0;
-  border: 2px solid #000;
-  box-shadow: 4px 4px 0px #999;
-  z-index: 10;
-  cursor: move;
+    position: absolute;
+    width: 280px;
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0px #999;
+    z-index: 10;
+    cursor: move;
 }
 
 .focus-window-header {

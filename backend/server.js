@@ -7,6 +7,7 @@ const { getChannelIdFromHandle, getVideosByChannelId } = require('./yt');
 const { searchTrack } = require('./spotify');
 const focusRoutes = require('./yt_focus'); 
 const authRoutes = require('./routes/auth_route');
+const playlistRoutes = require('./routes/playlists_route');
 
 const app = express();
 app.use(cors());
@@ -74,6 +75,9 @@ app.get('/api/music/:query', async (req, res) => {
 app.use('/api/focus', focusRoutes);
 
 app.use('/api/auth', authRoutes);
+
+app.use('/api/playlist', playlistRoutes);
+
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
