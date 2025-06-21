@@ -29,7 +29,7 @@ function pauseFocus() {
 
 function resetFocus() {
   pauseFocus();
-  totalSeconds = 1500;
+  totalSeconds = 3600;
   updateDisplay();
 }
 
@@ -74,3 +74,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const dragHandle = document.querySelector('.focus-window-header');
   makeDraggable(windowBox, dragHandle);
 });
+
+const openNotes = document.getElementById("openNotes");
+  const notesPopup = document.getElementById("notesPopup");
+  const notesText = document.getElementById("notesText");
+
+  openNotes.addEventListener("click", () => {
+    notesPopup.style.display = "block";
+    notesText.value = localStorage.getItem("meloNotes") || "";
+  });
+
+  function saveNotes() {
+    localStorage.setItem("meloNotes", notesText.value);
+    
+  }
+
+  function closeNotes() {
+    notesPopup.style.display = "none";
+  }
