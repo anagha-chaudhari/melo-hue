@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body>
-
+<body>  
   <nav class="navbar">
     <h1 class="logo">Melo<span>Hue</span></h1>
     <ul class="nav-links">
@@ -20,32 +19,61 @@
     </ul>
   </nav>
 
-  <section class="about-xp">
-  <div class="about-box green-box">
-    <h2>✦ ── so what are we? ── ✦</h2>
-    <p>
-      We are part of a cozy corner of the internet, inspired by calm study vlogs,
-      rainy mornings, and music that feels like a warm hug. It’s made with heart,
-      honoring all those who love quiet spaces, gentle routines, and the magic of soft focus.
-      Here, we celebrate stillness, creativity, and sweet slow days. I hope it becomes
-      a place where you feel safe to just be.
-    </p>
-  </div>
-
-  <div class="about-box cream-box">
-    <h2>⋆. 𐙚 ˚ write me something જ⁀➴⋆</h2>
-    <textarea placeholder="here..."></textarea>
-    <div class="button-row">
-      <button class="xp-btn">Yes</button>
-      <button class="xp-btn">Cancel</button>
+  <div class="aboutBody">
+  <div class="window left">
+    <div class="title-bar">
+      <span>✦ — so what are we? — ✦</span>
+    </div>
+    <div class="content">
+      <p>
+        We are part of a cozy corner of the internet, inspired by calm study vlogs, rainy mornings, and music that feels like a warm hug. It’s made with heart, honoring all those who love quiet spaces, gentle routines, and the magic of soft focus. Here, we celebrate stillness, creativity, and sweet slow days. I hope it becomes a place where you feel safe to just be.
+      </p>
     </div>
   </div>
-</section>
 
+  <div class="window right">
+    <div class="title-bar dark">
+      <span>📁 write me something</span>
+    </div>
+    <div class="content">
+      <h2>✶. 𐙚 ˚ <span class="blue-text">write me something</span> ꩜⋆</h2>
+      <textarea placeholder="here..."></textarea>
+      <div class="buttons">
+        <button onclick= "sendMessage()" class="btn">Yes</button>
+        <button onclick= "cancelMessage()" class="btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  </div>
 
   <footer>
     <p>soft minds, slow moments • © 2025 Melo-Hue</p>
   </footer>
 
+  <script>
+  function sendMessage() {
+    const content = document.getElementById('userMessage').value.trim();
+    if (!content) return alert('Please write something!');
+
+    fetch('http://localhost:5000/api/message', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content })
+    })
+    .then(res => res.json())
+    .then(data => {
+      alert('Message sent! 💌');
+      document.getElementById('userMessage').value = '';
+    })
+    .catch(err => {
+      console.error('Error:', err);
+      alert('Something went wrong');
+    });
+  }
+
+  function cancelMessage() {
+    document.getElementById('userMessage').value = '';
+  }
+</script>
 </body>
 </html>

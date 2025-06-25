@@ -8,6 +8,7 @@ const { searchTrack } = require('./spotify');
 const focusRoutes = require('./yt_focus'); 
 const authRoutes = require('./routes/auth_route');
 const playlistRoutes = require('./routes/playlists_route');
+const msgRoutes = require('./routes/msg_route');
 
 const app = express();
 app.use(cors());
@@ -77,6 +78,8 @@ app.use('/api/focus', focusRoutes);
 app.use('/api/auth', authRoutes);
 
 app.use('/api/playlist', playlistRoutes);
+
+app.use('/api/message', msgRoutes);
 
 
 mongoose.connect(process.env.MONGO_URI, {

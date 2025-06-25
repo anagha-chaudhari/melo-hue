@@ -1,28 +1,39 @@
+// routes/playlists_route.js
 const express = require('express');
-const fs = require('fs');
-const path = require('path');
 const router = express.Router();
+const Playlist = require('../models/Playlist');
 
-const filePath = path.join(__dirname, '../../client/js/playlists.json');
+// POST - Save a track to a specific user's playlist
+router.post('/', async (req, res) => {
+  const { title, spotifyTrackId, tags, userEmail } = req.body;
 
-router.post('/', (req, res) => {
-  const { title, spotifyTrackId, tags } = req.body;
-  if (!title || !spotifyTrackId || !tags) {
+  if (!title || !spotifyTrackId || !tags || !userEmail) {
     return res.status(400).json({ error: 'Missing fields' });
   }
 
-  const newEntry = { title, spotifyTrackId, tags };
-  fs.readFile(filePath, 'utf8', (err, data) => {
-    if (err) return res.status(500).json({ error: 'Could not read file' });
+  try {
+    const newTrack = new Playlist({ title, spotifyTrackId, tags, userEmail });
+    await newTrack.save();
+    res.status(201).json({ message: 'Track added!' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Failed to save track' });
+  }
+});
 
-    const json = JSON.parse(data);
-    json.push(newEntry);
+// GET - Fetch playlist for a specific user
+router.get('/', async (req, res) => {
+  const { email } = req.query;
 
-    fs.writeFile(filePath, JSON.stringify(json, null, 2), (err) => {
-      if (err) return res.status(500).json({ error: 'Could not write file' });
-      res.status(200).json({ message: 'Track added!' });
-    });
-  });
+  if (!email) return res.status(400).json({ error: 'Email is required' });
+
+  try {
+    const userTracks = await Playlist.find({ userEmail: email });
+    res.status(200).json(userTracks);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Failed to fetch playlist' });
+  }
 });
 
 module.exports = router;

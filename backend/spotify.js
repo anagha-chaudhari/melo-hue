@@ -1,4 +1,3 @@
-// backend/spotify.js
 const fetch = require('node-fetch');
 require('dotenv').config();
 
@@ -29,7 +28,7 @@ async function searchTrack(query) {
   }
 
   const res = await fetch(
-    `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=6`,
+    `https://api.spotify.com/v1/search?q=${encodeURIComponent(query)}&type=track&limit=20`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -38,7 +37,7 @@ async function searchTrack(query) {
   );
 
   const data = await res.json();
-  return data.tracks.items; // <-- return array of tracks
+  return data.tracks.items; // this will return array of tracks
 }
 
 module.exports = { searchTrack };

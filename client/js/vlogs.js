@@ -1,7 +1,24 @@
-const vlogContainer = document.getElementById('vlogContainer');
-const handle = '@yoorajung'; 
+let vlogContainer = document.getElementById('vlogContainer');
 
-async function fetchVideos() {
+function openCreatorPopup() {
+  document.getElementById('creatorPopup').style.display = 'flex';
+}
+
+function closeCreatorPopup() {
+  document.getElementById('creatorPopup').style.display = 'none';
+}
+
+async function submitCreator() {
+  const input = document.getElementById('creatorHandle').value.trim();
+  if (!input) return alert('Please enter a handle');
+
+  closeCreatorPopup();
+  document.getElementById('openVlogWrapper').style.display = 'none'; // hide the trigger image
+
+  await fetchVideos(input);
+}
+
+async function fetchVideos(handle) {
   try {
     const response = await fetch(`http://localhost:5000/api/videos/${handle}`);
     const videos = await response.json();
@@ -11,7 +28,7 @@ async function fetchVideos() {
       return;
     }
 
-    vlogContainer.innerHTML = ''; 
+    vlogContainer.innerHTML = '';
 
     videos.forEach(video => {
       const card = document.createElement('div');
@@ -27,5 +44,3 @@ async function fetchVideos() {
     vlogContainer.innerHTML = '<p>Something went wrong while fetching videos.</p>';
   }
 }
-
-fetchVideos();

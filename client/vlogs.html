@@ -20,14 +20,35 @@
     </ul>
   </nav>
 
-  <header class="vlog-header">
+ <!-- <header class="vlog-header">
     <h2>Today's Study Vibes</h2>
     <p>Curated calm from your favorite vlog channel</p>
-  </header>
+  </header>-->
+  <div class="vlog-bar"><header class="vlog-header">
+  <h2>🌱 one thing at a time ~ tune in! 🌱</h2>
+</div>
 
   <section class="vlog-grid" id="vlogContainer">
     <!-- Videos -->
   </section>
+
+<!-- Centered trigger image -->
+<div class="open-vlog-wrapper" id="openVlogWrapper">
+  <img src="images/vlog-open.png" alt="Open Vlogs" class="open-vlog-img" onclick="openCreatorPopup()" />
+</div>
+
+<!-- Creator popup -->
+<div class="creator-popup" id="creatorPopup" style="display: none;">
+  <div class="popup-box">
+    <h3>Enter Your Favorite Creator ✨</h3>
+    <input type="text" id="creatorHandle" placeholder="@creator_handle" />
+    <div class="popup-btns">
+      <button onclick="submitCreator()">Fetch</button>
+      <button onclick="closeCreatorPopup()">Cancel</button>
+    </div>
+  </div>
+</div>
+
 
   <footer>
     <p>Stay cozy • © 2025 Melo-Hue</p>
