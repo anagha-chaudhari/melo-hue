@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Message = require('../models/MsgMe');
 
-// POST /api/message
 router.post('/', async (req, res) => {
   try {
     const { content } = req.body;
