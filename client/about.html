@@ -21,47 +21,48 @@
   </nav>
 
   <div class="aboutWrapper">
-    <div class="windows-row">
+  <div class="windows-row">
 
-      <!-- Window 1 -->
-      <div class="window">
-        <div class="title-bar">
-          ✦ — so what are we? — ✦
-          <div class="window-controls">
-            <span class="btn-box">–</span>
-            <span class="btn-box close">×</span>
-          </div>
-        </div>
-        <div class="content">
-          <p>
-            This space is a cozy corner of the internet. Inspired by rainy vlogs, soft music, warm lights, and slow minds. A place to feel safe, quiet, and loved. A little digital hug for soft hearts. 🧸🍩🌀
-          </p>
+    <!-- Window 1: About -->
+    <div class="window retro-window">
+      <div class="title-bar">
+        <span class="blinking-cursor">✦</span> — so what are we? — ✦
+        <div class="window-controls">
+          <span class="btn-box">–</span>
+          <span class="btn-box close">×</span>
         </div>
       </div>
-
-      <!-- Window 2 -->
-      <div class="window">
-        <div class="title-bar">
-          ──── write me something ˋ°•*⁀➷
-          <div class="window-controls">
-            <span class="btn-box">–</span>
-            <span class="btn-box close">×</span>
-          </div>
-        </div>
-        <div class="content">\
-          <textarea id="userMessage" placeholder="write me something..."></textarea>
-          <div class="buttons">
-            <button class="btn" onclick="sendMessage()">Yes</button>
-            <button class="btn" onclick="cancelMessage()">Cancel</button>
-          </div>
-        </div>
+      <div class="content">
+        <p>
+          This space is a cozy corner of the internet. Inspired by rainy vlogs, soft music, warm lights, and slow minds. A place to feel safe, quiet, and loved. A little digital hug for soft hearts. 🧸🍩🌀
+        </p>
       </div>
-
     </div>
+
+    <!-- Window 2: Write to us -->
+    <div class="window retro-window">
+      <div class="title-bar">
+      write me somethingˋ°•*⁀➷
+        <div class="window-controls">
+          <span class="btn-box">–</span>
+          <span class="btn-box close">×</span>
+        </div>
+      </div>
+      <div class="content">
+        <textarea id="userMessage" placeholder="type your soft thought here..."></textarea>
+        <div class="buttons">
+          <button class="btn retro-btn" onclick="sendMessage()">Yes</button>
+          <button class="btn retro-btn" onclick="cancelMessage()">Cancel</button>
+        </div>
+      </div>
+    </div>
+
   </div>
+</div>
+
 
   <footer>
-    <p>soft minds, slow moments • © 2025 Melo-Hue</p>
+    <p>soft minds, slow moments • © 2025 MeloHue</p>
   </footer>
 
   <script>
