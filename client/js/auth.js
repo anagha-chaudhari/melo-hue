@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await res.json();
         if (res.ok) {
           // Store email
-          localStorage.setItem('userEmail', email); // changed from data.email to email
+          localStorage.setItem('userEmail', email);
           alert(`Welcome, ${data.user}!`);
           window.location.href = 'index.html';
         } else {
