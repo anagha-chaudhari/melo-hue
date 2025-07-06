@@ -20,7 +20,7 @@ async function submitCreator() {
 
 async function fetchVideos(handle) {
   try {
-    const response = await fetch(`http://localhost:5000/api/videos/${handle}`);
+    const response = await fetch(`https://melo-hue.onrender.com/api/videos/${handle}`);
     const videos = await response.json();
 
     if (videos.length === 0) {

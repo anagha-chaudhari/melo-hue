@@ -6,7 +6,7 @@
     }
 
     try {
-      const res = await fetch(`http://localhost:5000/api/music/${encodeURIComponent(query)}`);
+      const res = await fetch(`https://melo-hue.onrender.com/api/music/${encodeURIComponent(query)}`);
       const data = await res.json();
 
       const grid = document.querySelector('.music-grid');

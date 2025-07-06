@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   try {
-    const res = await fetch(`http://localhost:5000/api/playlist?email=${userEmail}`);
+    const res = await fetch(`https://melo-hue.onrender.com/api/playlist?email=${userEmail}`);
     const data = await res.json();
 
     data.forEach(track => {

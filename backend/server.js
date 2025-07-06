@@ -11,7 +11,11 @@ const playlistRoutes = require('./routes/playlists_route');
 const msgRoutes = require('./routes/msg_route');
 
 const app = express();
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://melohue.onrender.com'
+}));
+
 app.use(express.json());
 
 const PORT = 5000;

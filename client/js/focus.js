@@ -36,7 +36,7 @@ function resetFocus() {
 document.addEventListener('DOMContentLoaded', async () => {
   updateDisplay();
   try {
-    const res = await fetch('http://localhost:5000/api/focus/study-videos');
+    const res = await fetch('https://melo-hue.onrender.com/api/focus/study-videos');
     const videos = await res.json();
     const randomVideo = videos[Math.floor(Math.random() * videos.length)];
     const player = document.getElementById('youtubePlayer');

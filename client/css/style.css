@@ -1027,3 +1027,133 @@ textarea::placeholder {
 }
 
 
+/* ========== Responsive Styles ========== */
+
+@media screen and (max-width: 1024px) {
+  .music-grid,
+  .playlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .window {
+    width: 90%;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 1rem;
+  }
+
+  .hero-img {
+    max-width: 80%;
+  }
+
+  .playlist-bar,
+  .vlog-bar,
+  .music-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+    font-size: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn {
+    font-size: 0.7rem;
+  }
+
+  .music-grid,
+  .playlist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-window {
+    width: 90%;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+
+  .notes-popup {
+    width: 90%;
+    left: 5%;
+    bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+
+  .login-card {
+    padding: 1.2rem;
+  }
+
+  .playlist-header,
+  .vlog-header h2,
+  .music-header h2 {
+    font-size: 0.65rem;
+  }
+
+  .add-btn {
+    font-size: 0.55rem;
+    padding: 5px 10px;
+  }
+
+  .popup-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .focus-window {
+    width: 90%;
+    left: 5%;
+  }
+
+  .notes-folder img {
+    width: 60px;
+  }
+
+  .window {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .popup-box {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 9px;
+    padding: 0.6rem;
+  }
+}
