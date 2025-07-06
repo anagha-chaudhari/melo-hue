@@ -5,7 +5,7 @@ require('dotenv').config();
 const router = express.Router();
 
 router.get('/study-videos', async (req, res) => {
-  const query = 'study with me by abao tokyo';
+  const query = 'study with me 3 hours';
   const maxResults = 5;
 
   try {
