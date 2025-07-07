@@ -7,6 +7,7 @@ Year of Completion: 2025
 Source Language: HTML, CSS, JavaScript, Node.js, Express.js, MongoDB (Deployed on Render)
 
 -- Description: --
+
 MeloHue is an interactive personal website developed entirely from scratch. It combines retro design aesthetics inspired by the early Windows XP era with smooth, modern web interactions to create a distinctive digital space. The design is intentionally nostalgic appealing to users who value simplicity, aesthetics, and productivity.
 
 This web app allows users to:
@@ -22,6 +23,7 @@ This web app allows users to:
 All UI elements and structures were designed independently. Though some inspiration was drawn from older desktop software, every feature and visual element was manually created.
 
 -- APIs and External Use --
+
 1. YouTube Data API: For fetching relevant background study videos and channel content.
 
 2. Spotify API: To allow music search, playback preview, and playlist management.
@@ -31,6 +33,7 @@ All UI elements and structures were designed independently. Though some inspirat
 4. Fonts are sourced from Google Fonts and are free for commercial and personal use under the Open Font License (OFL).
 
 -- Declaration --
+
 I, Anagha Chaudhari, affirm that:
 
 The codebase, UI design, and application flow are original and solely created by me.
