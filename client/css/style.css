@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Press Start 2P', monospace;
-  background-color: #C0C0C0;
+  background-color: #c0c0c0;
   color: #000;
   font-size: 12px;
   line-height: 1.6;
@@ -109,7 +109,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #dfdfdf, #fdfdfd);
+ background: linear-gradient(135deg, #dfdfdf, #fdfdfd);
   border: 2px solid #000;
   padding: 2.5rem 2rem;
   margin: 2rem;
@@ -1027,7 +1027,7 @@ textarea::placeholder {
 }
 
 
-/* ========== Responsive Styles ========== */
+/* responsive */
 
 @media screen and (max-width: 1024px) {
   .music-grid,
