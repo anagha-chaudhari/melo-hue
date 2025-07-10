@@ -1,7 +1,7 @@
 Title of the Work: MeloHue  
 Type of Work: Computer Software (Web Application)
 
-Developer Name: Anagha Chaudhari  
+Developer Name: Anagha Rajeshkumar Chaudhari  
 Nationality: Indian  
 Year of Completion: 2025  
 Source Language: HTML, CSS, JavaScript, Node.js, Express.js, MongoDB (Deployed on Render)
@@ -20,7 +20,7 @@ This web app allows users to:
 
 4. Maintain a personal music notebook, storing and revisiting songs they emotionally connect with.
 
-All UI elements and structures were designed independently. Though some inspiration was drawn from older desktop software, every feature and visual element was manually created.
+All UI elements and structures were designed independently. Every feature and visual element was manually created.
 
 -- APIs and External Use --
 
@@ -32,9 +32,11 @@ All UI elements and structures were designed independently. Though some inspirat
 
 4. Fonts are sourced from Google Fonts and are free for commercial and personal use under the Open Font License (OFL).
 
+5. Images: index.png and favicon.png are AI-generated.
+
 -- Declaration --
 
-I, Anagha Chaudhari, affirm that:
+I, Anagha Rajeshkumar Chaudhari, affirm that:
 
 The codebase, UI design, and application flow are original and solely created by me.
 
