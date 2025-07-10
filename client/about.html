@@ -70,7 +70,7 @@
     function sendMessage() {
       const content = document.getElementById('userMessage').value.trim();
       if (!content) return alert('Please write something!');
-      fetch('http://localhost:5000/api/message', {
+      fetch('https://melo-hue.onrender.com/api/message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content })
