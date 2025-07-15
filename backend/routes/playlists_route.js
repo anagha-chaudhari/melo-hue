@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Playlist = require('../models/Playlist');
+const UserPlaylist = require('../models/Playlist');
 
-// POST - Save a track to a specific user's playlist
+// POST - Add a track to a specific user's playlist
 router.post('/', async (req, res) => {
   const { title, spotifyTrackId, tags, userEmail } = req.body;
 
@@ -11,14 +11,28 @@ router.post('/', async (req, res) => {
   }
 
   try {
-    const newTrack = new Playlist({ title, spotifyTrackId, tags, userEmail });
-    await newTrack.save();
-    res.status(201).json({ message: 'Track added!' });
+    // Find if user already has a playlist
+    let user = await UserPlaylist.findOne({ userEmail });
+
+    const newTrack = { title, spotifyTrackId, tags };
+
+    if (user) {
+      // Add to existing playlist
+      user.playlist.push(newTrack);
+      await user.save();
+    } else {
+      // Create new playlist
+      user = new UserPlaylist({ userEmail, playlist: [newTrack] });
+      await user.save();
+    }
+
+    res.status(201).json({ message: 'Track added to playlist!' });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Failed to save track' });
   }
 });
+
 
 // GET - Fetch playlist for a specific user
 router.get('/', async (req, res) => {
@@ -27,8 +41,11 @@ router.get('/', async (req, res) => {
   if (!email) return res.status(400).json({ error: 'Email is required' });
 
   try {
-    const userTracks = await Playlist.find({ userEmail: email });
-    res.status(200).json(userTracks);
+    const user = await UserPlaylist.findOne({ userEmail: email });
+
+    if (!user) return res.status(404).json({ message: 'No playlist found for user' });
+
+    res.status(200).json(user.playlist);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Failed to fetch playlist' });

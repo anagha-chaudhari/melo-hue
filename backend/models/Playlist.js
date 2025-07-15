@@ -1,10 +1,15 @@
 const mongoose = require('mongoose');
 
-const playlistSchema = new mongoose.Schema({
+const trackSchema = new mongoose.Schema({
   title: { type: String, required: true },
   spotifyTrackId: { type: String, required: true },
   tags: [String],
-  userEmail: { type: String, required: true }, 
+  addedAt: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Playlist', playlistSchema);
+const userPlaylistSchema = new mongoose.Schema({
+  userEmail: { type: String, required: true, unique: true },
+  playlist: [trackSchema],
+});
+
+module.exports = mongoose.model('UserPlaylist', userPlaylistSchema);
