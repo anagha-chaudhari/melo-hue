@@ -1,4 +1,4 @@
-function showMeloToast(message = "Something happened!", duration = 4000) {
+function showMeloToast(message = "Something happened!", duration = 6000) {
   let container = document.querySelector('.melo-toast-container');
   if (!container) {
     container = document.createElement('div');
