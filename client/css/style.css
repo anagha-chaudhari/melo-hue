@@ -1026,6 +1026,47 @@ textarea::placeholder {
   }
 }
 
+/* toast msg */
+.melo-toast-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  font-family: Tahoma, sans-serif;
+}
+
+.melo-toast {
+  background: #f0f0f0; /* Brighter retro background */
+  color: black;
+  padding: 10px 14px;
+  margin-top: 10px;
+  border: 2px solid #a0a0a0;
+  border-radius: 3px;
+  box-shadow: 3px 3px 0 #202020;
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+  gap: 12px;
+  animation: fadein 0.3s, fadeout 0.3s 3.5s;
+}
+
+.melo-toast img.toast-icon {
+  width: 24px;
+  height: 24px;
+  image-rendering: pixelated;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 
 /* responsive */
 

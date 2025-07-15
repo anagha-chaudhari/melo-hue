@@ -3,6 +3,37 @@ document.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.getElementById('loginForm');
   const logoutBtn = document.getElementById('logoutBtn');
 
+  function showMeloToast(message = "Something happened!", duration = 4000) {
+  let container = document.querySelector('.melo-toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'melo-toast-container';
+    document.body.appendChild(container);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'melo-toast';
+
+  const icon = document.createElement('img');
+  icon.src = 'images/autumn.png'; 
+  icon.alt = 'icon';
+  icon.className = 'toast-icon';
+
+  const msg = document.createElement('span');
+  msg.innerText = message;
+
+  toast.appendChild(icon);
+  toast.appendChild(msg);
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.remove();
+    if (container.children.length === 0) container.remove();
+  }, duration);
+}
+
+
+
   // Signup
   if (signupForm) {
     signupForm.addEventListener('submit', async (e) => {
@@ -20,14 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const data = await res.json();
         if (res.ok) {
-          alert('Signup successful!');
+          showMeloToast('Signup successful!');
           window.location.href = 'login.html';
         } else {
-          alert(data.message || 'Signup failed');
+          showMeloToast(data.message || 'Signup failed');
         }
       } catch (err) {
         console.error(err);
-        alert('Something went wrong!');
+        showMeloToast('Something went wrong!');
       }
     });
   }
@@ -50,14 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (res.ok) {
           // Store email
           localStorage.setItem('userEmail', email);
-          alert(`Welcome, ${data.user}!`);
+          showMeloToast(`Welcome, ${data.user}!`);
           window.location.href = 'index.html';
         } else {
-          alert(data.message || 'Login failed');
+          showMeloToast(data.message || 'Login failed');
         }
       } catch (err) {
         console.error(err);
-        alert('Something went wrong!');
+        showMeloToast('Something went wrong!');
       }
     });
   }
@@ -66,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (logoutBtn) {
     logoutBtn.addEventListener('click', () => {
       localStorage.removeItem('userEmail');
-      alert('Logged out successfully!');
+      showMeloToast('Logged out successfully!');
       window.location.href = 'login.html';
     });
   }
