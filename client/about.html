@@ -67,6 +67,34 @@
   </footer>
 
   <script>
+    function showMeloToast(message = "Something happened!", duration = 4000) {
+  let container = document.querySelector('.melo-toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'melo-toast-container';
+    document.body.appendChild(container);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'melo-toast';
+
+  const icon = document.createElement('img');
+  icon.src = 'images/autumn.png'; 
+  icon.alt = 'icon';
+  icon.className = 'toast-icon';
+
+  const msg = document.createElement('span');
+  msg.innerText = message;
+
+  toast.appendChild(icon);
+  toast.appendChild(msg);
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.remove();
+    if (container.children.length === 0) container.remove();
+  }, duration);
+}
     function sendMessage() {
       const content = document.getElementById('userMessage').value.trim();
       if (!content) return alert('Please write something!');
@@ -77,12 +105,12 @@
       })
       .then(res => res.json())
       .then(data => {
-        alert('Message sent! 💌');
+        showMeloToast('Message sent! 💌');
         document.getElementById('userMessage').value = '';
       })
       .catch(err => {
         console.error('Error:', err);
-        alert('Something went wrong');
+        showMeloToast('Something went wrong');
       });
     }
 
