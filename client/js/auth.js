@@ -1,9 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const signupForm = document.getElementById('signupForm');
-  const loginForm = document.getElementById('loginForm');
-  const logoutBtn = document.getElementById('logoutBtn');
-
-  function showMeloToast(message = "Something happened!", duration = 4000) {
+function showMeloToast(message = "Something happened!", duration = 4000) {
   let container = document.querySelector('.melo-toast-container');
   if (!container) {
     container = document.createElement('div');
@@ -32,7 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }, duration);
 }
 
-
+document.addEventListener('DOMContentLoaded', () => {
+  const signupForm = document.getElementById('signupForm');
+  const loginForm = document.getElementById('loginForm');
+  const logoutBtn = document.getElementById('logoutBtn');
 
   // Signup
   if (signupForm) {
