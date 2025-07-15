@@ -1,7 +1,36 @@
- async function searchMusic() {
+ function showMeloToast(message = "Something happened!", duration = 4000) {
+  let container = document.querySelector('.melo-toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'melo-toast-container';
+    document.body.appendChild(container);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'melo-toast';
+
+  const icon = document.createElement('img');
+  icon.src = 'images/autumn.png'; 
+  icon.alt = 'icon';
+  icon.className = 'toast-icon';
+
+  const msg = document.createElement('span');
+  msg.innerText = message;
+
+  toast.appendChild(icon);
+  toast.appendChild(msg);
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.remove();
+    if (container.children.length === 0) container.remove();
+  }, duration);
+}
+
+async function searchMusic() {
     const query = document.getElementById('searchInput').value.trim();
     if (!query) {
-      alert("Please type something!");
+      showMeloToast("Please type something!");
       return;
     }
 
@@ -31,11 +60,10 @@
       });
     } catch (error) {
       console.error('Error fetching music:', error);
-      alert('Oops! Something went wrong.');
+      showMeloToast('Oops! Something went wrong.');
     }
   }
 
-  // Optionally, you can load a default on page load:
   window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('searchInput').value = 'study';
     searchMusic();

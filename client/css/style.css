@@ -1033,12 +1033,13 @@ textarea::placeholder {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  font-family: Tahoma, sans-serif;
+  font-family: 'VT323', monospace;
 }
 
 .melo-toast {
-  background: #f0f0f0; /* Brighter retro background */
+  background: #f0f0f0;
   color: black;
+  font-size: 15px;
   padding: 10px 14px;
   margin-top: 10px;
   border: 2px solid #a0a0a0;

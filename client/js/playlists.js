@@ -1,3 +1,32 @@
+function showMeloToast(message = "Something happened!", duration = 4000) {
+  let container = document.querySelector('.melo-toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'melo-toast-container';
+    document.body.appendChild(container);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'melo-toast';
+
+  const icon = document.createElement('img');
+  icon.src = 'images/autumn.png'; 
+  icon.alt = 'icon';
+  icon.className = 'toast-icon';
+
+  const msg = document.createElement('span');
+  msg.innerText = message;
+
+  toast.appendChild(icon);
+  toast.appendChild(msg);
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.remove();
+    if (container.children.length === 0) container.remove();
+  }, duration);
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('playlistGrid');
   const userEmail = localStorage.getItem('userEmail');
@@ -70,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const data = await res.json();
       if (res.ok) {
-        alert('Added to your playlist!');
+        showMeloToast('Added to your playlist!');
         closePopup();
 
         // Inject new card instantly
@@ -93,11 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear form
         form.reset();
       } else {
-        alert(data.error || 'Failed to add');
+        showMeloToast(data.error || 'Failed to add');
       }
     } catch (err) {
       console.error(err);
-      alert('Something went wrong.');
+      showMeloToast('Something went wrong.');
     }
   });
 });
