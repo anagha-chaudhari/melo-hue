@@ -1,14 +1,7 @@
-Title of the Work: MeloHue  
-Type of Work: Computer Software (Web Application)
 
-Developer Name: Anagha Rajeshkumar Chaudhari  
-Nationality: Indian  
-Year of Completion: 2025  
-Source Language: HTML, CSS, JavaScript, Node.js, Express.js, MongoDB (Deployed on Render)
+# MeloHue - 🇹​🇭​🇮​🇸​ 🇼​🇪​🇧​🇸​🇮​🇹​🇪​ 🇮​🇸​ 🇨​🇴​🇵​🇾​🇷​🇮​🇬​🇭​🇹​ 🇷​🇪​🇬​🇮​🇸​🇹​🇪​🇷​🇪​🇩​ 🇺​🇳​🇩​🇪​🇷​ 🇬​🇴​🇻​🇹​. 🇴​🇫​ 🇮​🇳​🇩​🇮​🇦​
 
--- Description: --
-
-MeloHue is an interactive personal website developed entirely from scratch. It combines retro design aesthetics inspired by the early Windows XP era with smooth, modern web interactions to create a distinctive digital space. The design is intentionally nostalgic appealing to users who value simplicity, aesthetics, and productivity.
+MeloHue is an interactive personal website. It combines retro design aesthetics inspired by the early Windows XP era with smooth, modern web interactions to create a distinctive digital space. The design is intentionally nostalgic appealing to users who value simplicity, aesthetics, and productivity.
 
 This web app allows users to:
 
@@ -34,13 +27,4 @@ All UI elements and structures were designed independently. Every feature and vi
 
 5. Images: index.png and favicon.png are AI-generated.
 
--- Declaration --
-
-I, Anagha Rajeshkumar Chaudhari, affirm that:
-
-The codebase, UI design, and application flow are original and solely created by me.
-
-No proprietary or copyrighted material has been copied.
-
-This project is submitted for personal, non-commercial portfolio use and copyright registration.
 
