@@ -23,6 +23,7 @@ This web app allows users to:
 
 4. Fonts are sourced from Google Fonts and are free for commercial and personal use under the Open Font License (OFL).
 
-5. Images: index.png and favicon.png are AI-generated.
+<img width="1919" height="978" alt="Screenshot 2025-07-10 200522" src="https://github.com/user-attachments/assets/55a6abf9-606a-4dc1-9218-6ee89a0b7648" />
+
 
 
