@@ -24,6 +24,7 @@ This web app allows users to:
 4. Fonts are sourced from Google Fonts and are free for commercial and personal use under the Open Font License (OFL).
 
 <img width="1919" height="969" alt="Screenshot 2025-07-10 200522" src="https://github.com/user-attachments/assets/55a6abf9-606a-4dc1-9218-6ee89a0b7648" />
+<img width="1894" height="977" alt="Screenshot 2025-07-10 201432" src="https://github.com/user-attachments/assets/0bd3c72e-802b-4608-8006-8996e2ad40b0" />
 <img width="1919" height="969" alt="Screenshot 2025-07-10 200726" src="https://github.com/user-attachments/assets/137cfbc7-6980-4844-b663-2b54cf6b6482" />
 <img width="1895" height="965" alt="Screenshot 2025-07-10 200757" src="https://github.com/user-attachments/assets/30a1f964-64e3-4d0f-880a-036f3c02ba75" />
 <img width="1896" height="964" alt="Screenshot 2025-07-10 200917" src="https://github.com/user-attachments/assets/ccf26203-1b61-4780-a7ae-fd18b7598c4e" />
