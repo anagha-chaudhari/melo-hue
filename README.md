@@ -1,5 +1,5 @@
 
-# MeloHue - 🇹​🇭​🇮​🇸​ 🇼​🇪​🇧​🇸​🇮​🇹​🇪​ 🇮​🇸​ 🇨​🇴​🇵​🇾​🇷​🇮​🇬​🇭​🇹​ 🇷​🇪​🇬​🇮​🇸​🇹​🇪​🇷​🇪​🇩​ 🇺​🇳​🇩​🇪​🇷​ 🇬​🇴​🇻​🇹​. 🇴​🇫​ 🇮​🇳​🇩​🇮​🇦​
+# MeloHue - 🇹​🇭​🇮​🇸​ 🇼​🇪​🇧​🇸​🇮​🇹​🇪​ 🇮​🇸​ 🇨​🇴​🇵​🇾​🇷​🇮​🇬​🇭​🇹​ 🇷​🇪​🇬​🇮​🇸​🇹​🇪​🇷​🇪​🇩​ 🇺​🇳​🇩​🇪​🇷​ 🇬​🇴​🇻​🇹​. 🇴​🇫​ 🇮​🇳​🇩​🇮​🇦 (2025)​
 
 MeloHue is an interactive personal website. It combines retro design aesthetics inspired by the early Windows XP era with smooth, modern web interactions to create a distinctive digital space. The design is intentionally nostalgic appealing to users who value simplicity, aesthetics, and productivity.
 
@@ -12,8 +12,6 @@ This web app allows users to:
 3. Use the Spotify API to browse and personalize their music taste.
 
 4. Maintain a personal music notebook, storing and revisiting songs they emotionally connect with.
-
-All UI elements and structures were designed independently. Every feature and visual element was manually created.
 
 -- APIs and External Use --
 
